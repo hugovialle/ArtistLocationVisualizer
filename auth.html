@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>ArtistLocationVisualizer</title>
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+    <div id="mapContainer">
+        <div id="myProgress">
+            <div id="myLoadingBar">0%</div>
+        </div>
+    </div>
+    <input type="hidden" id="token-hidden">
+    <input type="hidden" id="currentPlaylist">
+    <input type="hidden" id="playlistObjectItem">
+    <input type="hidden" id="latitude">
+    <input type="hidden" id="longitude">
+    <div id="sidebar">
+        <div id="head">
+            <i class="fa fa-info-circle" id="info" aria-hidden="true"></i>
+            <div id="message">You can drop any playlist on the page</div>
+            <div id="error">Sorry, only playlists are supported</div>
+        </div>
+       <p id="playlists-title">Playlists</p>
+       <ul id="playlists">
+       </ul>
+   </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+</html>

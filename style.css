@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#myProgress{
+    z-index: 100;
+    position: relative;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: solid 2px #232F34;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+}
+
+#myLoadingBar {
+    width: 0%;
+    height: 15px;
+    background-color: #F9AA33;
+    border-radius: 10px;
+    text-align: center; 
+    line-height: 15px;
+    color: #232F34;
+  }
+
+#sidebar {
+    background-color: #232F34;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+#playlists-title {
+    color: #F9AA33;
+    font-weight: 500;
+    font-size: larger;
+    margin-left: 15px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+#playlists{
+    color: white;
+    margin-top: 10px;
+}
+
+#playlist-item img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 10%;
+    vertical-align: bottom
+}
+
+#playlist-item {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    position: relative;
+    padding-left: 30px;
+    cursor: default;
+}
+
+#playlist-item:hover{
+    background-color: #344955;
+}
+
+#playlist-item:active{
+    color: #F9AA33;
+}
+
+#playlist-item span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#head{
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#message{
+    margin: 10px 10px 0px 25px;
+    color: #5c6970;
+}
+
+#info{
+    color: #F9AA33;
+    float: left;
+    vertical-align: bottom;
+    margin-top: 2px;
+}
+
+#error{
+    color: rgb(179, 28, 61);
+    margin-top: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+#container{
+    box-sizing: border-box;
+    margin: 20px 20px 30px 20px;
+    padding-bottom: 30px;
+}
+
+#mapContainer {
+    height: 100vh;
+    margin-right:250px;
+    z-index: 50;
+    position: relative;
+}
+
+.marker {
+    background-image: url('/images/icon2.png');
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
